@@ -4,9 +4,9 @@
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #d9d9d9;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #ffffff;
 }
 
 .fa-solid {
@@ -26,16 +26,15 @@ body {
 }
 
 /****** Header ***********/
-nav {
+header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    height: 79px;
-    width: 100%;
 }
 
-nav .Logo {
+.Logo{
+    display: flex;
+    align-items: center ;
     width: 61px;
     height: 19px;
 }
@@ -52,24 +51,120 @@ nav ul li a {
     font-weight: 500;
     font-size: 16px;
 }
+.title-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 
-/* Le conteneur parent devient un contexte "flex" */
+}
+search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 16px;
+    gap: 10px;
+}
+
+.filter-btn .fa-solid{
+    color: #0065FC;
+}
+.info-icon .fa-solid {
+    color: #0065FC;
+}
+.position-btn .fa-solid {
+    color: black;
+}
+
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+}
+
+.position-btn{
+    width: 50px;
+    height: 49px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+
+#champ-recherche{
+    width: 147px;
+    height: 49px;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.search-submit-btn{
+    width: 132px;
+    height: 49px;
+    background: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+
+}
+
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.filters-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.filter-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 16px;
+    gap: 8px;
+
+    height: 49px;
+
+    background-color: var(--filter-bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Aligne les colonnes avec un espace égal entre elles */
-    align-items: flex-start;        /* Aligne le haut des colonnes */
-    max-width: 1200px;              /* Évite que le footer devienne trop large sur grand écran */
-    margin: 0 auto;                 /* Centre le conteneur sur la page */
-    padding: 20px;                  /* Ajoute un peu d'espace interne */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Optionnel : pour contrôler la taille de chaque colonne */
+
 .footer-column {
-    flex: 1;                        /* Donne une largeur égale à toutes les colonnes */
-    margin-right: 20px;             /* Crée un espace à droite de chaque colonne */
+    flex: 1;
+    margin-right: 20px;
 }
 
-/* On retire la marge de la dernière colonne pour éviter un décalage */
 .footer-column:last-child {
     margin-right: 0;
 }
