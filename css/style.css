@@ -148,7 +148,60 @@ search{
     font-size: 17px;
     cursor: pointer;
 }
+.hébergements-cards{
+    display: flex;
+    margin-top: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.hébergements-cards > a {
+    width: calc(33% - 11px);
+}
 
+.hébergements-cards .images{
+    width: 100%;
+   border-radius: 20px 20px 0px 0px;
+}
+
+.card-rating .fa-solid{
+    color: #0065FC;
+}
+
+.card-rating .neutral-star{
+    color: #F2F2F2;
+}
+
+.Activités{
+    display: flex;
+    flex-direction: column;
+}
+
+.Activités .Activités-descriptions{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Activités .Activités-descriptions > a{
+    width: calc(25% - 12px);
+}
+
+.Activités .section-title{
+    white-space: nowrap;
+    margin: 40px;
+}
+
+.Activités .card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.Activités img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
 
 .footer-container {
     display: flex;
@@ -157,6 +210,9 @@ search{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: #F2F2F2;
+    margin-top: 40px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 
