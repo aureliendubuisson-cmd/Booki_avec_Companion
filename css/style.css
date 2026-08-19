@@ -216,13 +216,15 @@ search{
 
 .hébergements-cards{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
     margin-top: 24px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 16px;
+
 }
 .hébergements-cards > a {
-    width: calc(33% - 11px);
+    width: 31%;
     display: flex;
 }
 
@@ -499,10 +501,6 @@ a {
         font-size: 13px;
     }
 
-    .hébergements-cards > a {
-        width: calc(50% - 8px);
-    }
-
     .hebergements .card-content {
         min-height: 83px;
         justify-content: flex-start;
@@ -673,6 +671,7 @@ a {
     .filter-btn {
         display: flex;
         justify-content: center;
+        font-size: 14px;
     }
 
     .filter-btn:hover {
