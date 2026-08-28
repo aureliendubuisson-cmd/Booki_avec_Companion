@@ -211,7 +211,7 @@ search{
 }
 
 .hebergements .card-rating {
-    margin: 0;
+    margin: auto 0 0;
 }
 
 .hébergements-cards{
@@ -299,6 +299,16 @@ search{
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+.Activités .card-title {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 20px 19px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 
 .footer-container {
@@ -559,11 +569,10 @@ a {
 
     .Activités .card-title {
         margin: 0;
-        padding: 20px 19px;
+        padding: 20px 28px;
         min-height: 70px;
         box-sizing: border-box;
     }
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
